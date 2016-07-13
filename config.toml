@@ -1,9 +1,8 @@
 baseurl = "https://ma.ssive.co/"
 languageCode = "en-us"
 title = "Ma.ssive"
-
+DisqusShortname = "massiveco"
 theme = "casper"
-
 Copyright = "All rights reserved - 2016"
 canonifyurls = true
 
@@ -12,3 +11,6 @@ canonifyurls = true
   googleAnalyticsUserID = ""
   githubName = "massiveco"
   hideHUGOSupport = true
+
+[Blackfriday]
+  hrefTargetBlank = true
