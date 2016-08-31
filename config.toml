@@ -1,14 +1,111 @@
 baseurl = "https://ma.ssive.co/"
 languageCode = "en-us"
-title = "Ma.ssive"
-
-theme = "casper"
-
+title = "Ma.ssive Consulting"
+DisqusShortname = "massiveco"
+theme = "agency"
 Copyright = "All rights reserved - 2016"
 canonifyurls = true
 
 [params]
   cover = "cover.jpg"
-  googleAnalyticsUserID = ""
-  githubName = "massiveco"
+  googleAnalyticsUserID = "UA-80752079-1"
   hideHUGOSupport = true
+
+
+  name = "Ma.ssive"
+  description = "Sweet"
+  email = "hello@ma.ssive.co"
+
+	# Navigation
+	[params.navigation]
+		brand = "MASSIVE"
+		services = "Services"
+		portfolio = "Technologies"
+        contact = "Contact Us"
+		about = "About"
+		team = "Team"
+
+    #[[menu.postpend]]
+    #    url = "https://github.com/massiveco"
+    #    name = "Github"
+    #    weight = 8
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Hey there, we're Massive Consulting"
+		subtitle = "Let's build something!"
+		buttonText = "Tell me more"
+
+	# Services section
+	[params.services]
+        enable = true
+		title = "Services"
+		subtitle = "Let's build something together!"
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-code"
+                title = "Development"
+                description = "<p>Available to help your team push to the finish or build out a prototype to test your product in the market Massive can bring it’s decade of experience developing for the cloud to bare on your problem.</p><p>Extensive experience with node.js will allow us to quickly and professionally build your application. A polyglot approach to data persistence, be it sql, noSQL, and/or graph ensures the best possible fit for your data and performance for your application.</p>"
+
+            [[params.services.row.list]]
+                icon = "fa-terminal"
+                title = "Operations Support"
+                description = "<p>Allow your developers to focus on delivering features to your clients while we manage your infrastructure. Whether it's migrating to the cloud or keeping the lights-on with 24/7 support we’ve got you covered.</p><p>Treating infrastructure as code allows us to iteratively build towards the best platform for your application.  Adding in prometheus monitoring allows us respond proactively to developing issues before they affect your users.</p>"
+
+
+    # About section
+	[params.about]
+        enable = true
+		title = "About"
+		subtitle = "<p>Massive Consulting is a small firm working out of Ottawa, Canada.</p><p>We have over 5 years experience working remotely with clients and team members from all over the world. Whether you are launching the next big SaaS project or bringing together sentiment analysis and a remote control Christmas Tree in Toronto’s Union Station we have the experience to help.</p>"
+		endpoint = "Let's build something together!"
+
+	# Contact section
+	[params.contact]
+        enable = true
+		title = "Contact us"
+		subtitle  = "Take the first step"
+		buttonText = "Send message"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Your Name *"
+			warning = "Please enter your name."
+
+		[params.contact.form.email]
+			text = "Your Email *"
+			warning = "Please enter your email address."
+
+		[params.contact.form.message]
+			text = "Your Message *"
+			warning = "Please enter a message."
+
+
+	# Footer section
+	[params.footer]
+        enable = true
+		copyright = "&copy; 2016 Ma.ssive Consulting. All rights reserved."
+
+#		[[params.footer.social]]
+#			icon = "fa-twitter"
+#			link = "#"
+#
+#		[[params.footer.social]]
+#			icon = "fa-facebook"
+#			link = "#"
+#
+#		[[params.footer.social]]
+#			icon = "fa-linkedin"
+#			link = "#"
+#
+#		[[params.footer.quicklinks]]
+#			text = "Privacy Policy"
+#			link = "#"
+#
+#		[[params.footer.quicklinks]]
+#			text = "Terms of Use"
+#			link = "#"
